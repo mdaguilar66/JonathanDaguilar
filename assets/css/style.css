@@ -1,0 +1,523 @@
+/*--------------------------------------------------------------
+# Key Frames
+--------------------------------------------------------------*/
+@-webkit-keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  
+  /*--------------------------------------------------------------
+  # Colors
+  --------------------------------------------------------------*/
+  /*--------------------------------------------------------------
+  # General
+  --------------------------------------------------------------*/
+  *, ::after, ::before {
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+  }
+  
+  body {
+    margin: 0 !important;
+  }
+  
+  h2 {
+    font-size: 40px;
+  }
+  
+  .h1-banner {
+    font-family: Domine;
+    font-size: 3rem !important;
+  }
+  
+  @media only screen and (max-width: 768px) {
+    .h1-banner {
+      font-size: 1.5rem !important;
+    }
+  }
+  
+  .hidden {
+    display: none;
+  }
+  
+  .overflow-hidden {
+    overflow: hidden;
+  }
+  
+  /*--------------------------------------------------------------
+  # Header
+  --------------------------------------------------------------*/
+  /*--------------------------------------------------------------
+  # Navigation Menu
+  --------------------------------------------------------------*/
+  .navbar-nav {
+    -webkit-box-orient: horizontal !important;
+    -webkit-box-direction: normal !important;
+        -ms-flex-direction: row !important;
+            flex-direction: row !important;
+  }
+  
+  .navbar {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  
+  @media only screen and (max-width: 768px) {
+    .navbar {
+      display: none !important;
+    }
+  }
+  
+  .nav-item {
+    padding: 0 1rem;
+  }
+  
+  .nav-link {
+    color: white !important;
+    text-decoration: none !important;
+    text-transform: uppercase;
+    font-size: 14px;
+    letter-spacing: 1px;
+  }
+  
+  .site-header__container {
+    font-family: Domine;
+    /* max-width: 1320px !important; */
+    margin: auto !important;
+    padding: 0.55rem 0 !important;
+  }
+  
+  .site-header__logo h2 {
+    font-size: 30px;
+  }
+  
+  .scroll {
+    background-color: rgba(66, 66, 66, 0.5) !important;
+    box-shadow: 0 1px 2px rgb(0 0 0 / 30%);
+    transition: all .4s ease-out;
+  }
+  
+  /*--------------------------------------------------------------
+  # Hero Section
+  --------------------------------------------------------------*/
+  .hero {
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(0, 0, 0, 0.5)), to(transparent)), url("../img/Man-Looking.jpg");
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.5), transparent), url("../img/Man-Looking.jpg");
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+    background-position: center;
+    position: relative;
+  }
+  
+  .hero .container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    height: 100%;
+  }
+  
+  .hero h2 {
+    color: #ffffff;
+  }
+  
+  .hero__container {
+    z-index: 3;
+  }
+  
+  @media only screen and (max-width: 768px) {
+    .hero {
+      height: 60vh;
+    }
+    .hero .col-6 {
+      width: 60%;
+    }
+  }
+  
+  /*--------------------------------------------------------------
+  # Hypno Intro Section
+  --------------------------------------------------------------*/
+  .hypno-intro {
+    padding: 4rem 0;
+  }
+  
+  .hypno-intro a {
+    background-color: orange;
+    border-radius: 0px;
+    color: black;
+    margin-top: 0.7rem;
+  }
+  
+  .hypno-intro a:nth-of-type(1) {
+    padding: 10px 80px;
+  }
+  
+  .hypno-intro a:hover {
+    -webkit-transform: translateY(-3px);
+            transform: translateY(-3px);
+    -webkit-transition: all 0.4s ease-in-out;
+    transition: all 0.4s ease-in-out;
+    color: white;
+  }
+  
+  .hypno-intro a:nth-of-type(2) {
+    background-color: #ffffff;
+    border: 1px solid #424242;
+    color: #424242;
+  }
+  
+  .hypno-intro h6 {
+    padding-top: 4rem;
+  }
+  
+  @media only screen and (max-width: 768px) {
+    .hypno-intro {
+      padding: 2rem 0;
+    }
+    .hypno-intro h6 {
+      padding-top: 2rem;
+    }
+  }
+  
+  /*--------------------------------------------------------------
+  # Banner One Section
+  --------------------------------------------------------------*/
+  .banner-one {
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(0, 0, 0, 0.5)), to(transparent)), url("../img/Happy.jpeg");
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.5), transparent), url("../img/Happy.jpeg");
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+    background-position: center;
+    position: relative;
+  }
+  
+  .banner-one .container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    height: 100%;
+  }
+  
+  .banner-one h2 {
+    color: #ffffff;
+  }
+  
+  .banner-one__container {
+    z-index: 3;
+  }
+  
+  @media only screen and (max-width: 768px) {
+    .banner-one {
+      height: 50vh;
+    }
+  }
+  
+  /*--------------------------------------------------------------
+  # Hypno Areas Section
+  --------------------------------------------------------------*/
+  .hypno-areas {
+    padding: 2rem 0;
+  }
+  
+  .hypno-areas h2 {
+    margin-bottom: 2rem;
+  }
+  
+  @media only screen and (max-width: 768px) {
+    .hypno-areas .accordian {
+      margin: 0.5rem 0;
+    }
+  }
+  
+  .accordian-item {
+    margin: 1px;
+  }
+  
+  .accordian-title {
+    font-size: 1.5rem;
+  }
+  
+  .accordian-item .accordian-heading {
+    background-color: rgba(0, 0, 0, 0.1);
+    padding: 0.5rem 2rem;
+    border-radius: 5px;
+    position: relative;
+    cursor: pointer;
+  }
+  
+  .accordian-item .accordian-heading::after {
+    -webkit-transition: inherit;
+    transition: inherit;
+    content: "\002B";
+    float: right;
+    font-size: 25px;
+    position: absolute;
+    right: 4%;
+    bottom: 22%;
+    pointer-events: none;
+  }
+  
+  .accordian-item .accordian-body {
+    padding: 1rem 2rem;
+  }
+  
+  .accordian-item.active .accordian-heading {
+    background-color: orange;
+    color: white;
+    border-radius: 5px;
+    border-radius: 5px 5px 0 0;
+  }
+  
+  .active {
+    transition: all 0.5s ease-in-out;
+  }
+  
+  .accordian-item.active .accordian-heading::after {
+    content: "\2212";
+  }
+  
+  .accordian-item.active .accordian-content {
+    -webkit-transition: ease 0.7s all;
+  }
+  
+  .accordian-item.active .accordian-body {
+    border-radius: 0 0 5px 5px;
+    background-color: rgba(255, 165, 0, 0.05);
+  }
+  
+  /*--------------------------------------------------------------
+  # Banner Two Section
+  --------------------------------------------------------------*/
+  .banner-two {
+    background: url("../img/Trance.jpg");
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+    background-position: center;
+    position: relative;
+  }
+  
+  .banner-two .container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    height: 100%;
+  }
+  
+  .banner-two .row {
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+  }
+  
+  .banner-two h2 {
+    color: #ffffff;
+  }
+  
+  .banner-two__container {
+    z-index: 3;
+    text-align: right;
+  }
+  
+  @media only screen and (max-width: 768px) {
+    .banner-two {
+      height: 50vh;
+    }
+  }
+  
+  /*--------------------------------------------------------------
+  # Hypno expect Section
+  --------------------------------------------------------------*/
+  .hypno-expect {
+    padding: 2rem 0;
+  }
+  
+  .hypno-expect h2 {
+    margin-bottom: 2rem;
+  }
+  
+  /*--------------------------------------------------------------
+  # About me Section
+  --------------------------------------------------------------*/
+  .about-me {
+    background-color: black;
+    color: white;
+    padding: 4rem 0;
+  }
+  
+  .about-me__copy {
+    padding: 0 3rem !important;
+  }
+  
+  .about-me__copy h2 {
+    margin-bottom: 2rem;
+  }
+  
+  .about-me__image {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  
+  @media only screen and (max-width: 768px) {
+    .about-me {
+      padding: 2rem 0 0;
+    }
+    .about-me p {
+      margin-bottom: 2rem;
+    }
+  
+    .about-me__image img {
+      width: 100%;
+    }
+  }
+  
+  /*--------------------------------------------------------------
+  # Review Section
+  --------------------------------------------------------------*/
+  .reviews {
+    padding: 5rem 0 7rem;
+  }
+  
+  .reviews h2 {
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+  
+  .reviews__cell {
+    width: 100%;
+    /* height: 470px; */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  
+  .reviews .cell__wrap {
+    width: 60%;
+    margin: auto;
+  }
+  
+  .reviews .cell__quote {
+    font-style: italic;
+  }
+  
+  .reviews .cell__label {
+    font-weight: 700;
+  }
+  
+  .reviews .flickity-button {
+    background: transparent;
+  }
+  
+  .reviews .flickity-prev-next-button.next {
+    right: 120px;
+  }
+  
+  .reviews .flickity-prev-next-button.previous {
+    left: 120px;
+  }
+  
+  .reviews .flickity-viewport {
+    -webkit-transition: height 0.7s;
+    transition: height 0.7s;
+  }
+  
+  @media only screen and (max-width: 768px) {
+    .reviews {
+      padding: 2rem 0 2rem;
+    }
+  
+    .reviews .flickity-prev-next-button.next {
+      right: 0px;
+    }
+    .reviews .flickity-prev-next-button.previous {
+      left: 0px;
+    }
+    .reviews .flickity-page-dots {
+      display: none;
+    }
+  
+    .reviews .cell__wrap {
+      width: 76%;
+    }
+  }
+  
+  /*--------------------------------------------------------------
+  # Book Section
+  --------------------------------------------------------------*/
+  .book {
+    background-color: black;
+    color: white;
+    padding: 4rem 0;
+  }
+  
+  .book__button {
+    background-color: white;
+    border-radius: 0px;
+    color: #424242;
+    margin-top: 0.7rem;
+    padding: .375rem .75rem;
+    text-decoration: none;
+    text-align: center;
+    width: 30% !important;
+    margin: 3rem 0;
+  }
+  
+  .book__button:hover {
+    -webkit-transform: translateY(-3px);
+            transform: translateY(-3px);
+    -webkit-transition: all 0.4s ease-in-out;
+    transition: all 0.4s ease-in-out;
+    color: #424242;
+  }
+  
+  /*--------------------------------------------------------------
+  # Footer
+  --------------------------------------------------------------*/
+  /*# sourceMappingURL=style.css.map */
